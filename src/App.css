@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.calc {
+  width: 200px;
+  height: auto;
+  border: 1px solid black;
+  margin: 50px;
+  font-size: 20px;
+}
+
+.numberField,
+.result{
+  width: 100%;
+  height: 50px;
+  text-align: right;
+  padding: 10px 10px 0 0;
+}
+
+.calc-row {
+  width: 100%;
+  float: right;
+}
+
+.calc-row div {
+  width: 25%;
+  height: 50px;
+  float: right;
+  border: 1px solid black;
+  border-right: none;
+  text-align: center;
+  padding-top: 10px;
+  border-bottom: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.calc-row div:hover:active{
+  box-shadow: inset 0 0 5px rgb(0,0,0);
+}
+
+.calc-row div:hover {
+  box-shadow: 0 0 10px rgb(0,0,0);
+}
+
+.calc-row div:first-child {
+  border-right: 1px solid black;
+}
+
+.calc-row:last-child div {
+  border-bottom: 1px solid black;
+}
+
+.sign {
+  background: #f1f1f1;
+  color: #007bff;
+}
